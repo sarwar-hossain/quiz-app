@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+.question-section,
+.options-section,
+.results-section {
+  margin: 20px 0;
+}
+
+.question-section {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.options-section label {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  margin-left: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.timer-section {
+  float: right;
+  font-size: 15px;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #0056b3;
+}
+
+.actions-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Question Buttons */
+.question-button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30%;
+  background-color: #08e9e9;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.question-button:hover {
+  transform: scale(1.1);
+}
+
+.question-button.active {
+  border: 6px solid #ff2600;
+  font-size: 3rex;
+  color: rgb(235, 109, 5);
+  padding:7px 14px;
+}
+
+.question-button.selected {
+  background-color: #33f70b;
+  color: white;
+}
+
+
+.questions-markbar {
+  display: flex;
+}
+
+.questions-markbar p {
+  margin-left: 10px;
+  padding: 10px;
+  color:white;
+  border-radius: 10%;
+}
+ 
+.attend {
+  background-color: #33f70b;
+  width: 90px;
+}
+
+.unattend {
+  background-color: #08e9e9;
+  width: 110px;
+}
+
+.mark {
+  background-color: #ffc107;
+  width: 80px;
+}
+
+.question-button.marked {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Results Section */
+.results-section {
+  text-align: center;
+}
+
+.results-section h2 {
+  font-size: 2rem;
+  color: #28a745;
+}
+
+.results-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results-section li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
