@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import questions from "./questions";
+import Question from './components/Question';
 
 function App() {
   const totallTime = questions.length*60*10;
@@ -122,27 +123,10 @@ function App() {
             ))}
           </div>
 
-          <div className="question-section">
 
-            <p>{currentQuestion + 1}: {questions[currentQuestion].question}</p>
-          </div>
+          <Question currentQuestion={currentQuestion} questions={questions}  selectedAnswers={selectedAnswers} handleOptionChange={handleOptionChange}  />
 
-          <div className="options-section">
-            {questions[currentQuestion].options.map((option, index) => (
-              <div key={index}>
-                <label>
-                  <input
-                    type="radio"
-                    name="option"
-                    value={option}
-                    checked={selectedAnswers[currentQuestion] === option}
-                    onChange={handleOptionChange}
-                  />
-                  {option}
-                </label>
-              </div>
-            ))}
-          </div>
+      
 
           <div className="actions-section">
             <button
